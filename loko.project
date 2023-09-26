@@ -3,7 +3,7 @@
   "id": "provemerge",
   "description": "",
   "created_on": "26/09/2023, 19:25:07",
-  "last_modify": "26/09/2023, 19:29:31",
+  "last_modify": "26/09/2023, 19:31:28",
   "graphs": {
     "main": {
       "nodes": [
@@ -182,6 +182,84 @@
               ],
               "click": null,
               "icon": "RiCheckboxBlankCircleFill",
+              "values": {}
+            }
+          },
+          "selectable": true,
+          "draggable": true,
+          "__class__": "Node"
+        },
+        {
+          "id": "02370a95-b2c1-46fc-a5d7-e75ba1b60257",
+          "position": {
+            "x": 652,
+            "y": 335
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": null,
+          "dragging": null,
+          "data": {
+            "pname": "automl_ext",
+            "fsdao": {
+              "daos": {
+                "data": {
+                  "data": {
+                    "value": {
+                      "base": "/home/fulvio/loko",
+                      "hidden": {},
+                      "type": null
+                    }
+                  }
+                }
+              }
+            },
+            "name": "datasets",
+            "events": null,
+            "description": "",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input",
+                "service": "datasets",
+                "to": "output"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": null,
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                }
+              ],
+              "click": null,
+              "icon": null,
               "values": {}
             }
           },
