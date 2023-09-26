@@ -3,11 +3,207 @@
   "id": "provemerge",
   "description": "",
   "created_on": "26/09/2023, 19:25:07",
-  "last_modify": "26/09/2023, 19:25:07",
+  "last_modify": "26/09/2023, 19:29:31",
   "graphs": {
     "main": {
-      "nodes": [],
-      "edges": [],
+      "nodes": [
+        {
+          "id": "da29c501-6768-4845-8de2-3e0e24542c86",
+          "position": {
+            "x": 562,
+            "y": 95
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": null,
+          "dragging": null,
+          "data": {
+            "pname": "loko_translate",
+            "fsdao": {
+              "daos": {
+                "data": {
+                  "data": {
+                    "value": {
+                      "base": "/home/fulvio/loko",
+                      "hidden": {},
+                      "type": null
+                    }
+                  }
+                }
+              }
+            },
+            "name": "Translate",
+            "events": null,
+            "description": "",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input",
+                "service": "translate",
+                "to": "output"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": false,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "source",
+                  "type": "asyncSelect",
+                  "label": "Source Language",
+                  "helper": "",
+                  "group": "",
+                  "value": null,
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "url": "http://localhost:9999/routes/loko_translate/languages"
+                },
+                {
+                  "name": "target",
+                  "type": "asyncSelect",
+                  "label": "Target Language",
+                  "helper": "",
+                  "group": "",
+                  "value": null,
+                  "description": "",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "url": "http://localhost:9999/routes/loko_translate/languages"
+                }
+              ],
+              "click": null,
+              "icon": "RiTranslate",
+              "values": {}
+            }
+          },
+          "selectable": true,
+          "draggable": true,
+          "__class__": "Node"
+        },
+        {
+          "id": "85279850-bd33-4f16-bc64-89f82aeda48a",
+          "position": {
+            "x": 829,
+            "y": 79
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": null,
+          "dragging": null,
+          "data": {
+            "pname": "handwritten_ext",
+            "fsdao": {
+              "daos": {
+                "data": {
+                  "data": {
+                    "value": {
+                      "base": "/home/fulvio/loko",
+                      "hidden": {},
+                      "type": null
+                    }
+                  }
+                }
+              }
+            },
+            "name": "handwritten",
+            "events": null,
+            "description": "",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input",
+                "service": "",
+                "to": "output"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                }
+              ],
+              "click": null,
+              "icon": "RiCheckboxBlankCircleFill",
+              "values": {}
+            }
+          },
+          "selectable": true,
+          "draggable": true,
+          "__class__": "Node"
+        }
+      ],
+      "edges": [
+        {
+          "id": "reactflow__edge-da29c501-6768-4845-8de2-3e0e24542c86output-85279850-bd33-4f16-bc64-89f82aeda48ainput",
+          "source": "da29c501-6768-4845-8de2-3e0e24542c86",
+          "sourceHandle": "output",
+          "target": "85279850-bd33-4f16-bc64-89f82aeda48a",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#888",
+            "stopColor": "#888"
+          },
+          "__class__": "Edge"
+        }
+      ],
       "__class__": "Graph"
     }
   },
