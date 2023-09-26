@@ -3,7 +3,7 @@
   "id": "provemerge",
   "description": "",
   "created_on": "26/09/2023, 19:25:07",
-  "last_modify": "26/09/2023, 19:32:23",
+  "last_modify": "26/09/2023, 19:37:02",
   "graphs": {
     "main": {
       "nodes": [
@@ -349,10 +349,10 @@
           "__class__": "Node"
         },
         {
-          "id": "02370a95-b2c1-46fc-a5d7-e75ba1b60257",
+          "id": "71393747-4158-45e8-9f4b-1626510ac587",
           "position": {
-            "x": 521,
-            "y": 210
+            "x": 1186,
+            "y": 190
           },
           "type": "custom",
           "dragHandle": "#nodeHandle",
@@ -360,10 +360,10 @@
           "targetPosition": "left",
           "width": 150,
           "height": 56,
-          "selected": false,
-          "dragging": false,
+          "selected": null,
+          "dragging": null,
           "data": {
-            "pname": "automl_ext",
+            "pname": "handwritten_ext",
             "fsdao": {
               "daos": {
                 "data": {
@@ -377,14 +377,14 @@
                 }
               }
             },
-            "name": "datasets",
+            "name": "handwritten",
             "events": null,
             "description": "",
             "inputs": [
               {
                 "id": "input",
                 "label": "input",
-                "service": "datasets",
+                "service": "",
                 "to": "output"
               }
             ],
@@ -396,7 +396,7 @@
             ],
             "configured": true,
             "options": {
-              "group": null,
+              "group": "Custom",
               "args": [
                 {
                   "name": "comment",
@@ -418,16 +418,12 @@
                 }
               ],
               "click": null,
-              "icon": null,
+              "icon": "RiCheckboxBlankCircleFill",
               "values": {}
             }
           },
           "selectable": true,
           "draggable": true,
-          "positionAbsolute": {
-            "x": 521,
-            "y": 210
-          },
           "__class__": "Node"
         }
       ],
