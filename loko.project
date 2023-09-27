@@ -3,11 +3,7 @@
   "id": "provemergeclone",
   "description": "",
   "created_on": "26/09/2023, 19:25:07",
-<<<<<<< HEAD
-  "last_modify": "26/09/2023, 19:37:02",
-=======
   "last_modify": "26/09/2023, 19:35:02",
->>>>>>> face0af9991657b6c2587cb1d28ff8f378ec8415
   "graphs": {
     "main": {
       "nodes": [
@@ -351,87 +347,6 @@
           "selectable": true,
           "draggable": true,
           "__class__": "Node"
-<<<<<<< HEAD
-        },
-        {
-          "id": "71393747-4158-45e8-9f4b-1626510ac587",
-          "position": {
-            "x": 1186,
-            "y": 190
-          },
-          "type": "custom",
-          "dragHandle": "#nodeHandle",
-          "sourcePosition": "right",
-          "targetPosition": "left",
-          "width": 150,
-          "height": 56,
-          "selected": null,
-          "dragging": null,
-          "data": {
-            "pname": "handwritten_ext",
-            "fsdao": {
-              "daos": {
-                "data": {
-                  "data": {
-                    "value": {
-                      "base": "/home/fulvio/loko",
-                      "hidden": {},
-                      "type": null
-                    }
-                  }
-                }
-              }
-            },
-            "name": "handwritten",
-            "events": null,
-            "description": "",
-            "inputs": [
-              {
-                "id": "input",
-                "label": "input",
-                "service": "",
-                "to": "output"
-              }
-            ],
-            "outputs": [
-              {
-                "id": "output",
-                "label": "output"
-              }
-            ],
-            "configured": true,
-            "options": {
-              "group": "Custom",
-              "args": [
-                {
-                  "name": "comment",
-                  "type": "area",
-                  "label": "Node comment",
-                  "helper": "Use it to explain the usage of this node"
-                },
-                {
-                  "name": "alias",
-                  "type": "text",
-                  "label": "Name",
-                  "helper": "Use this name as an alias"
-                },
-                {
-                  "name": "debug",
-                  "type": "boolean",
-                  "label": "Debug to Console",
-                  "divider": true
-                }
-              ],
-              "click": null,
-              "icon": "RiCheckboxBlankCircleFill",
-              "values": {}
-            }
-          },
-          "selectable": true,
-          "draggable": true,
-          "__class__": "Node"
-=======
->>>>>>> face0af9991657b6c2587cb1d28ff8f378ec8415
         }
       ],
       "edges": [
