@@ -1,19 +1,17 @@
 {
-  "__class__": "Project",
-  "id": "provemerge",
-  "created_on": "26/09/2023, 19:25:07",
-  "active": "main",
   "name": "provemerge",
+  "id": "provemerge",
   "description": "",
+  "created_on": "26/09/2023, 19:25:07",
+  "last_modify": "27/09/2023, 10:57:15",
   "graphs": {
     "main": {
-      "__class__": "Graph",
       "nodes": [
         {
           "id": "0c225abf-dfed-4bc6-8b53-8a6d8223bb31",
           "position": {
-            "x": 666,
-            "y": 443
+            "x": 757,
+            "y": 402
           },
           "type": "custom",
           "dragHandle": "#nodeHandle",
@@ -111,6 +109,10 @@
           },
           "selectable": true,
           "draggable": true,
+          "positionAbsolute": {
+            "x": 757,
+            "y": 402
+          },
           "__class__": "Node"
         },
         {
@@ -125,8 +127,8 @@
           "targetPosition": "left",
           "width": 150,
           "height": 56,
-          "selected": null,
-          "dragging": null,
+          "selected": false,
+          "dragging": false,
           "data": {
             "pname": "automl_ext",
             "fsdao": {
@@ -531,6 +533,100 @@
             "y": 248
           },
           "__class__": "Node"
+        },
+        {
+          "id": "1c25f115-70fa-452c-a81b-469fada99ea6",
+          "position": {
+            "x": 541,
+            "y": 366
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "pname": "prova_only_container_ext",
+            "fsdao": {
+              "daos": {
+                "data": {
+                  "data": {
+                    "value": {
+                      "base": "/home/fulvio/loko",
+                      "hidden": {},
+                      "type": null
+                    }
+                  }
+                }
+              }
+            },
+            "name": "MyExt",
+            "events": null,
+            "description": "",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input",
+                "service": "",
+                "to": "output"
+              },
+              {
+                "id": "file_input",
+                "label": "file_input",
+                "service": "files",
+                "to": "file_output"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              },
+              {
+                "id": "file_output",
+                "label": "file_output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Custom",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "param_example",
+                  "type": "text",
+                  "label": "Param Example",
+                  "helper": "just an example"
+                }
+              ],
+              "click": null,
+              "icon": null,
+              "values": {}
+            }
+          },
+          "selectable": true,
+          "draggable": true,
+          "__class__": "Node"
         }
       ],
       "edges": [
@@ -547,13 +643,29 @@
           "selected": false,
           "dragging": false,
           "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-1c25f115-70fa-452c-a81b-469fada99ea6output-0c225abf-dfed-4bc6-8b53-8a6d8223bb31input",
+          "source": "1c25f115-70fa-452c-a81b-469fada99ea6",
+          "sourceHandle": "output",
+          "target": "0c225abf-dfed-4bc6-8b53-8a6d8223bb31",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#888",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
         }
-      ]
+      ],
+      "__class__": "Graph"
     }
   },
   "open": [
     "main"
   ],
+  "active": "main",
   "version": "1.0.0",
-  "last_modify": "27/09/2023, 10:54:04"
+  "__class__": "Project"
 }
