@@ -1,13 +1,11 @@
 {
-  "__class__": "Project",
-  "id": "provemerge",
-  "created_on": "26/09/2023, 19:25:07",
-  "active": "main",
-  "name": "provemerge",
+  "name": "provemergeclone",
+  "id": "provemergeclone",
   "description": "",
+  "created_on": "26/09/2023, 19:25:07",
+  "last_modify": "27/09/2023, 10:56:32",
   "graphs": {
     "main": {
-      "__class__": "Graph",
       "nodes": [
         {
           "id": "0c225abf-dfed-4bc6-8b53-8a6d8223bb31",
@@ -372,165 +370,6 @@
           "selectable": true,
           "draggable": true,
           "__class__": "Node"
-        },
-        {
-          "id": "6a71307f-cc5d-43c2-8a1f-7c09ebc93731",
-          "position": {
-            "x": 1026,
-            "y": 248
-          },
-          "type": "custom",
-          "dragHandle": "#nodeHandle",
-          "sourcePosition": "right",
-          "targetPosition": "left",
-          "width": 150,
-          "height": 56,
-          "selected": false,
-          "dragging": false,
-          "data": {
-            "pname": "sql-tools",
-            "fsdao": {
-              "daos": {
-                "data": {
-                  "data": {
-                    "value": {
-                      "base": "/home/fulvio/loko",
-                      "hidden": {},
-                      "type": null
-                    }
-                  }
-                }
-              }
-            },
-            "name": "Postgres",
-            "events": null,
-            "description": "### Description\n**Postgres** component is used to persist the data processed through the developed flows.\n\nIt allows to query and insert the data in the chosen database directly within the workflows.\n\n### Configuration\n\n- **Host** is used to set the host name. If you're using the extension's side container use \"sql-tools_postgres\".\n\n- **Port** is used to set the default port.\n\n- **User** is used to set the user account.\n\n- **Password** is the password associated to the user account.\n\n- **DB name** is used to set the SQL DB.\n\n- **Table name** is used to insert new data into a table. \n\n### Input\nThe component has two inputs:\n- **Insert** accepts single dictionaries (representing rows of the table) or list of dictionaries. \n  Passing single rows as input can be time consuming. \n- **Query** requires a string containing the SQL query.\n\n### Output\n- **Save** returns a string with the number of elements saved.\n- **Query** returns a dictionary for each element of the requested query. If the query produces no results, \n  \"Query executed\" will be returned.\n",
-            "inputs": [
-              {
-                "id": "insert",
-                "label": "insert",
-                "service": "save",
-                "to": "insert"
-              },
-              {
-                "id": "query",
-                "label": "query",
-                "service": "query",
-                "to": "query"
-              }
-            ],
-            "outputs": [
-              {
-                "id": "insert",
-                "label": "insert"
-              },
-              {
-                "id": "query",
-                "label": "query"
-              }
-            ],
-            "configured": true,
-            "options": {
-              "group": "Custom",
-              "args": [
-                {
-                  "name": "comment",
-                  "type": "area",
-                  "label": "Node comment",
-                  "helper": "Use it to explain the usage of this node"
-                },
-                {
-                  "name": "alias",
-                  "type": "text",
-                  "label": "Name",
-                  "helper": "Use this name as an alias"
-                },
-                {
-                  "name": "debug",
-                  "type": "boolean",
-                  "label": "Debug to Console",
-                  "divider": true
-                },
-                {
-                  "name": "host",
-                  "type": "text",
-                  "label": "Host",
-                  "helper": "",
-                  "group": "",
-                  "value": "sql-tools_postgres",
-                  "description": "",
-                  "validation": null
-                },
-                {
-                  "name": "port",
-                  "type": "number",
-                  "label": "Port",
-                  "helper": "",
-                  "group": "",
-                  "value": 5432,
-                  "description": "",
-                  "validation": null
-                },
-                {
-                  "name": "user",
-                  "type": "text",
-                  "label": "User",
-                  "helper": "",
-                  "group": "",
-                  "value": "root",
-                  "description": "",
-                  "validation": null
-                },
-                {
-                  "name": "password",
-                  "type": "password",
-                  "label": "Password",
-                  "helper": "",
-                  "group": "",
-                  "value": "root_password",
-                  "description": "",
-                  "validation": null
-                },
-                {
-                  "name": "db_name",
-                  "type": "text",
-                  "label": "DB name",
-                  "helper": "Specify the DB name",
-                  "group": "",
-                  "value": "mydb",
-                  "description": "",
-                  "validation": null
-                },
-                {
-                  "name": "table_name",
-                  "type": "text",
-                  "label": "Table name",
-                  "helper": "Specify the table name",
-                  "group": "",
-                  "value": "mytable",
-                  "description": "",
-                  "validation": null
-                }
-              ],
-              "click": null,
-              "icon": "RiDatabase2Line",
-              "values": {
-                "host": "sql-tools_postgres",
-                "port": 5432,
-                "user": "root",
-                "password": "root_password",
-                "db_name": "mydb",
-                "table_name": "mytable"
-              }
-            }
-          },
-          "selectable": true,
-          "draggable": true,
-          "positionAbsolute": {
-            "x": 1026,
-            "y": 248
-          },
-          "__class__": "Node"
         }
       ],
       "edges": [
@@ -548,12 +387,14 @@
           "dragging": false,
           "__class__": "Edge"
         }
-      ]
+      ],
+      "__class__": "Graph"
     }
   },
   "open": [
     "main"
   ],
+  "active": "main",
   "version": "1.0.0",
-  "last_modify": "27/09/2023, 10:54:04"
+  "__class__": "Project"
 }
