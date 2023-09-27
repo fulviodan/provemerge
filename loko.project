@@ -3,7 +3,7 @@
   "id": "provemerge",
   "description": "",
   "created_on": "26/09/2023, 19:25:07",
-  "last_modify": "27/09/2023, 11:15:15",
+  "last_modify": "27/09/2023, 11:15:46",
   "graphs": {
     "main": {
       "nodes": [
@@ -198,7 +198,20 @@
           "__class__": "Node"
         }
       ],
-      "edges": [],
+      "edges": [
+        {
+          "id": "reactflow__edge-18d29c6a-b24b-469f-994e-e4124601f02foutput-69629099-047a-4da1-a8e8-5a8fc813b9b8input",
+          "source": "18d29c6a-b24b-469f-994e-e4124601f02f",
+          "sourceHandle": "output",
+          "target": "69629099-047a-4da1-a8e8-5a8fc813b9b8",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#56A6DC",
+            "stopColor": "#56A6DC"
+          },
+          "__class__": "Edge"
+        }
+      ],
       "__class__": "Graph"
     }
   },
